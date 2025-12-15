@@ -13,6 +13,7 @@ export default function PortfolioLayout() {
   return (
     <PortfolioLayoutWidget
       footerProps={config.scaffold.footerProps}
+      footer={config.scaffold.footer}
       mainNavProps={{
         ...config.scaffold.mainNavProps,
         initialMenu: "/portfolio",
@@ -29,4 +30,3 @@ export default function PortfolioLayout() {
     </PortfolioLayoutWidget>
   );
 }
-

@@ -14,6 +14,7 @@ export default function LeaderboardLayout() {
         initialMenu: "/leaderboard",
       }}
       footerProps={config.scaffold.footerProps}
+      footer={config.scaffold.footer}
       routerAdapter={{
         onRouteChange,
       }}
@@ -23,4 +24,3 @@ export default function LeaderboardLayout() {
     </Scaffold>
   );
 }
-

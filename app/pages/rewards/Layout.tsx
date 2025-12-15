@@ -19,6 +19,7 @@ export default function RewardsLayout() {
         initialMenu: "/rewards",
       }}
       footerProps={config.scaffold.footerProps}
+      footer={config.scaffold.footer}
       routerAdapter={{
         onRouteChange,
       }}
@@ -28,4 +29,3 @@ export default function RewardsLayout() {
     </Scaffold>
   );
 }
-
