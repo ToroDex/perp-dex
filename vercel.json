@@ -1,5 +1,8 @@
 {
   "version": 2,
   "buildCommand": "yarn build",
-  "outputDirectory": "build/client"
+  "outputDirectory": "build/client",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
