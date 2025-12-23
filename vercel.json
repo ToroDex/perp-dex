@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "installCommand": "npm install -g pnpm && pnpm install",
+  "installCommand": "corepack enable && corepack prepare pnpm@latest --activate && pnpm install",
   "buildCommand": "pnpm build",
   "outputDirectory": "build/client",
   "rewrites": [
