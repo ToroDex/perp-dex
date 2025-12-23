@@ -24,6 +24,7 @@ import binanceWallet from "@binance/w3w-blocknative-connector";
 import bitgetWallet from "@web3-onboard/bitget";
 import phantomWallet from "@web3-onboard/phantom";
 import coinbaseWallet from "@web3-onboard/coinbase";
+import gateWallet from "./wallets/gateWallet";
 
 export const getEvmConnectors = (): CreateConnectorFn[] => {
   const walletConnectProjectId = getRuntimeConfig(
@@ -100,20 +101,6 @@ export const getOnboardEvmWallets = () => {
     return [];
   }
 
-  // Debug: Check what wallet providers are available
-  if (isBrowser) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    console.log('[Wallet Debug] window.ethereum:', !!(window as any).ethereum);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    console.log('[Wallet Debug] window.bitkeep:', !!(window as any).bitkeep);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    console.log('[Wallet Debug] window.phantom:', !!(window as any).phantom);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    console.log('[Wallet Debug] window.okxwallet:', !!(window as any).okxwallet);
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    console.log('[Wallet Debug] window.coinbaseWalletExtension:', !!(window as any).coinbaseWalletExtension);
-  }
-
   // Wallet order (shown exactly in this order - Web3-Onboard doesn't auto-sort)
   const wallets = [
     // TOP PRIORITY: Partner wallets for maximum visibility
@@ -123,6 +110,7 @@ export const getOnboardEvmWallets = () => {
 
     // Additional partner wallets
     binanceWallet({ options: { lng: "en" } }), // #4 - Binance
+    gateWallet(),                              // #5 - Gate Wallet
 
     // Auto-detected injected wallets (MetaMask, OKX, Rabby, etc.)
     // Note: These will show with "Detected" badge if installed
