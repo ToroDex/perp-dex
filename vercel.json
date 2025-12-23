@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "installCommand": "corepack enable && corepack prepare pnpm@latest --activate && pnpm install",
-  "buildCommand": "pnpm build",
+  "installCommand": "npm install --legacy-peer-deps",
+  "buildCommand": "npm run build",
   "outputDirectory": "build/client",
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
