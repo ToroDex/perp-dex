@@ -151,7 +151,16 @@ function gateWallet(): WalletInit {
     return {
       label: "Gate Wallet",
       getIcon: async () => GATE_WALLET_ICON,
-      getInterface: async () => ({ provider }),
+      getInterface: async () => {
+        // Request chain ID to ensure provider has synced its state
+        // This fixes "Wrong network" errors on initial connection
+        try {
+          await provider.request({ method: "eth_chainId" });
+        } catch {
+          // Ignore errors, provider will still work
+        }
+        return { provider };
+      },
       platforms: ["desktop"],
     };
   };
