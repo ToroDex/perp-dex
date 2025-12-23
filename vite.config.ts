@@ -57,6 +57,17 @@ export default defineConfig(() => {
     ],
     build: {
       outDir: "build/client",
+      rollupOptions: {
+        // Externalize optional peer dependencies that aren't used
+        external: ["graz"],
+        onwarn(warning, warn) {
+          // Suppress warnings for externalized modules
+          if (warning.code === "UNRESOLVED_IMPORT" && warning.exporter === "graz") {
+            return;
+          }
+          warn(warning);
+        },
+      },
     },
     optimizeDeps: {
       include: ["react", "react-dom", "react-router-dom"],
