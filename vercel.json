@@ -1,6 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "yarn build",
+  "installCommand": "npm install -g pnpm && pnpm install",
+  "buildCommand": "pnpm build",
   "outputDirectory": "build/client",
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
