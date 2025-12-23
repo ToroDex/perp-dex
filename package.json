@@ -17,7 +17,11 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@binance/w3w-blocknative-connector": "^1.1.1",
+    "@getpara/ethers-v6-integration": "^2.0.0-alpha.72",
+    "@getpara/react-sdk": "2.0.0-alpha.72",
     "@orderly.network/affiliate": "2.8.6",
+    "@orderly.network/hooks": "2.8.6",
     "@orderly.network/i18n": "2.8.6",
     "@orderly.network/markets": "2.8.6",
     "@orderly.network/portfolio": "2.8.6",
@@ -35,7 +39,13 @@
     "@solana/wallet-adapter-base": "^0.9.24",
     "@solana/wallet-adapter-wallets": "^0.19.36",
     "@tanstack/query-core": "^5.79.0",
+    "@tanstack/react-query": "^5.90.9",
+    "@web3-onboard/bitget": "^2.1.1",
+    "@web3-onboard/coinbase": "^2.4.2",
+    "@web3-onboard/injected-wallets": "^2.11.2",
+    "@web3-onboard/phantom": "^2.1.1",
     "@web3-onboard/walletconnect": "^2.6.2",
+    "ethers": "^6.15.0",
     "ip-range-check": "^0.2.0",
     "isbot": "^4.1.0",
     "lucide-react": "^0.544.0",
@@ -44,6 +54,7 @@
     "react-helmet-async": "^2.0.5",
     "react-router-dom": "^7.1.3",
     "stream-browserify": "^3.0.0",
+    "viem": "^2.39.0",
     "wagmi": "^2.15.4",
     "woofi-swap-widget-kit": "^0.0.33"
   },
@@ -70,8 +81,10 @@
     "vite-plugin-node-polyfills": "0.24.0",
     "vite-tsconfig-paths": "^5.1.4"
   },
-  "resolutions": {
-    "**/*/@amplitude/analytics-browser": "2.11.13",
-    "**/*/@reown/appkit": "1.7.8"
+  "pnpm": {
+    "overrides": {
+      "@amplitude/analytics-browser": "2.11.13",
+      "@reown/appkit": "1.7.8"
+    }
   }
 }
