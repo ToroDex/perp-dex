@@ -53,6 +53,17 @@ export default defineConfig(() => {
     ],
     build: {
       outDir: "build/client",
+      rollupOptions: {
+        // Externalize unused peer dependencies from Para SDK's cosmos connector
+        // Note: @cosmjs/* packages are installed and bundled (needed by Para SDK)
+        external: ["graz"],
+        onwarn(warning, warn) {
+          if (warning.code === "UNRESOLVED_IMPORT" && warning.exporter === "graz") {
+            return;
+          }
+          warn(warning);
+        },
+      },
     },
     optimizeDeps: {
       include: ["react", "react-dom", "react-router-dom"],
