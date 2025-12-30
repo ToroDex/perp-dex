@@ -117,6 +117,8 @@ function isGateWalletInstalled(): boolean {
   );
 }
 
+const GATE_WALLET_INSTALL_URL = "https://www.gate.io/web3";
+
 /**
  * Gate Wallet module for Web3-Onboard
  *
@@ -138,20 +140,23 @@ function gateWallet(): WalletInit {
   }
 
   return () => {
-    if (!isGateWalletInstalled()) {
-      return null;
-    }
-
-    const provider = getGateWalletProvider();
-
-    if (!provider) {
-      return null;
-    }
-
     return {
       label: "Gate Wallet",
       getIcon: async () => GATE_WALLET_ICON,
       getInterface: async () => {
+        // If Gate Wallet is not installed, redirect to install page
+        if (!isGateWalletInstalled()) {
+          window.open(GATE_WALLET_INSTALL_URL, "_blank");
+          throw new Error("Please install Gate Wallet extension to continue");
+        }
+
+        const provider = getGateWalletProvider();
+
+        if (!provider) {
+          window.open(GATE_WALLET_INSTALL_URL, "_blank");
+          throw new Error("Gate Wallet provider not found. Please install or refresh the page.");
+        }
+
         // Request chain ID to ensure provider has synced its state
         // This fixes "Wrong network" errors on initial connection
         try {
