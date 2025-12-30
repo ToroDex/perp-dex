@@ -58,33 +58,6 @@ export default defineConfig(() => {
     build: {
       outDir: "build/client",
       rollupOptions: {
-        // Externalize optional peer dependencies that aren't used
-        // These are peer deps of @getpara/cosmos-wallet-connectors and related packages
-        external: [
-          "graz",
-          "@cosmjs/stargate",
-          "@cosmjs/amino",
-          "@cosmjs/encoding",
-          "@cosmjs/proto-signing",
-          "@cosmjs/tendermint-rpc",
-          "@cosmjs/math",
-          "@cosmjs/crypto",
-          "@keplr-wallet/types",
-          "cosmjs-types",
-        ],
-        onwarn(warning, warn) {
-          // Suppress warnings for externalized cosmos-related modules
-          if (
-            warning.code === "UNRESOLVED_IMPORT" &&
-            (warning.exporter === "graz" ||
-              warning.exporter?.startsWith("@cosmjs/") ||
-              warning.exporter?.startsWith("@keplr-wallet/") ||
-              warning.exporter === "cosmjs-types")
-          ) {
-            return;
-          }
-          warn(warning);
-        },
       },
     },
     optimizeDeps: {

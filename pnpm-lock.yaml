@@ -15,12 +15,33 @@ importers:
       '@binance/w3w-blocknative-connector':
         specifier: ^1.1.1
         version: 1.1.10(@web3-onboard/common@2.4.2(bufferutil@4.1.0)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.25.76))(bufferutil@4.1.0)(encoding@0.1.13)(tsx@4.21.0)(utf-8-validate@5.0.10)(yaml@2.8.2)
+      '@cosmjs/amino':
+        specifier: ^0.38.0
+        version: 0.38.0
+      '@cosmjs/crypto':
+        specifier: ^0.38.0
+        version: 0.38.0
+      '@cosmjs/encoding':
+        specifier: ^0.38.0
+        version: 0.38.0
+      '@cosmjs/math':
+        specifier: ^0.38.0
+        version: 0.38.0
+      '@cosmjs/proto-signing':
+        specifier: ^0.38.0
+        version: 0.38.0
+      '@cosmjs/stargate':
+        specifier: ^0.38.0
+        version: 0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      '@cosmjs/tendermint-rpc':
+        specifier: ^0.38.0
+        version: 0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
       '@getpara/ethers-v6-integration':
         specifier: ^2.0.0-alpha.72
         version: 2.2.0(ethers@6.16.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))
       '@getpara/react-sdk':
         specifier: 2.0.0-alpha.72
-        version: 2.0.0-alpha.72(d2d83aaad1b0ada06e8a51b5ab7efd1d)
+        version: 2.0.0-alpha.72(a74466c9d68196bc844f0697ac9b1163)
       '@orderly.network/affiliate':
         specifier: 2.8.6
         version: 2.8.6(@types/react-dom@18.3.7(@types/react@18.3.27))(@types/react@18.3.27)(bufferutil@4.1.0)(embla-carousel@8.6.0)(encoding@0.1.13)(fastestsmallesttextencoderdecoder@1.0.22)(got@12.1.0)(react-dom@18.3.1(react@18.3.1))(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10))(react@18.3.1)(tailwindcss@3.4.19(tsx@4.21.0)(yaml@2.8.2))(typescript@5.8.3)(utf-8-validate@5.0.10)
@@ -563,6 +584,9 @@ packages:
   '@cosmjs/amino@0.37.0':
     resolution: {integrity: sha512-Qjg3vx0V907ICYr9wTFuF55+P2F7FuVuVdV8WsBJC6G9ekS5nbi7Z4+YsoJf3JEp5WApVgcX3HmAWZhziayxzw==}
 
+  '@cosmjs/amino@0.38.0':
+    resolution: {integrity: sha512-gG38Z5QLCEPZF/D/iNLDehriulPz/YSr63AcVRDvuckIAp+xzXey7kp5f5Sx28geExd83syy5VgO7fJUYq2GBQ==}
+
   '@cosmjs/cosmwasm-stargate@0.37.0':
     resolution: {integrity: sha512-q3bezZzAIyPpUT89CpQrOhI6xJU4wiMU0ufN5nsPtRaZ1Cn8mwoj76j56wb7lvwsAPIk7ALjVbQwULmn7hii6A==}
 
@@ -573,6 +597,9 @@ packages:
   '@cosmjs/crypto@0.37.0':
     resolution: {integrity: sha512-rjnU7SEgNTUQAUotG686m7ahYSWgHh3J6n2JXoWoHJz0uVv4o4P+pbAFklyQ1PcPIR7u6LezCKDB5tP5Y5PeYQ==}
 
+  '@cosmjs/crypto@0.38.0':
+    resolution: {integrity: sha512-azmWiqiTLjeogkIJtc0gYQoA1IRRKk+MosydmB8vnyV4f12Vpgje5enVoI4mBZZn+MdEKDze5HZwXYskNqkQkQ==}
+
   '@cosmjs/encoding@0.31.3':
     resolution: {integrity: sha512-6IRtG0fiVYwyP7n+8e54uTx2pLYijO48V3t9TLiROERm5aUAIzIlz6Wp0NYaI5he9nh1lcEGJ1lkquVKFw3sUg==}
 
@@ -582,8 +609,14 @@ packages:
   '@cosmjs/encoding@0.37.0':
     resolution: {integrity: sha512-xtdC0w+iVFOrod9a5RLJULUECv+6AvZr5FkD8AFr2vD853n7Z89/AVuEiJzd4GdUwlPzxcaamhAtmI+IB9DYvg==}
 
+  '@cosmjs/encoding@0.38.0':
+    resolution: {integrity: sha512-3KhtNvn+I2+gYEGtBXrXJdio2zQk6LzerS//azQGdGG+hsE0Mq+HzE7Tqx7ixMMO1MILqIYuN17CxUHqy0hNHA==}
+
   '@cosmjs/json-rpc@0.37.0':
     resolution: {integrity: sha512-MzuVu2hUmY6uOhn2ezoe9AhR/WBIKYYWarr8QazVnM2N5gZQnfL3Pg/i+f2f4lhacSwYVnJXfqF1CZJoDi0AUg==}
+
+  '@cosmjs/json-rpc@0.38.0':
+    resolution: {integrity: sha512-1+szroqMdSfg28cbFUtxAjlsFfel01BGeRpcnwrnsaTsTUdewEohTnqhAnAF5PCKGrfSVEnTnaOurrnY2OcAlA==}
 
   '@cosmjs/math@0.31.3':
     resolution: {integrity: sha512-kZ2C6glA5HDb9hLz1WrftAjqdTBb3fWQsRR+Us2HsjAYdeE6M3VdXMsYCP5M3yiihal1WDwAY2U7HmfJw7Uh4A==}
@@ -591,29 +624,50 @@ packages:
   '@cosmjs/math@0.37.0':
     resolution: {integrity: sha512-FI+Tq8mhW0tuDawRvPdyX3K7qDZD2v1keRhiK/zHisvtQVzqoRRoOS1g5P9Pc7gWLQ1jPS15gDMYBu5+UYJ1+g==}
 
+  '@cosmjs/math@0.38.0':
+    resolution: {integrity: sha512-6nuttk4eHKtM0h78Ucz/Hbg82KYfq51ZHp4u0HrsLJuX9Q5LXg3zkrOW0CaRU5zAx3miwQDO1GIzijOERHKm6Q==}
+
   '@cosmjs/proto-signing@0.31.3':
     resolution: {integrity: sha512-24+10/cGl6lLS4VCrGTCJeDRPQTn1K5JfknzXzDIHOx8THR31JxA7/HV5eWGHqWgAbudA7ccdSvEK08lEHHtLA==}
 
   '@cosmjs/proto-signing@0.37.0':
     resolution: {integrity: sha512-Ir/nPyrKIlFKsNAfUPVAfgNj0NBEHyryzIPJbCebTK9fBuAyQ3LXn+QfiFYR58/kVp63gEdIlADMQGGBS5ZF+w==}
 
+  '@cosmjs/proto-signing@0.38.0':
+    resolution: {integrity: sha512-dMKZuNXCL7dNN8/wfUZ/Yo/w0Qlxgrsll3GYjHJy8rdiXceXRObJEmu6jVzbsDEbeT4sFtZ4RsRvmTL3BMLQ6g==}
+
   '@cosmjs/socket@0.37.0':
     resolution: {integrity: sha512-v07ufhrGXgja8O7ZTkUn66WJ2uWjtnH6F4KFNxI1XayrrHpVExlKS7BQIr5pKY1XUkKHCIcahuN4sRiPOOE38Q==}
+
+  '@cosmjs/socket@0.38.0':
+    resolution: {integrity: sha512-rIOncpej3qp5rE9rLCUA8H668Z4apJqDV6VpnXcwp9/74Sy+epjGYd49qivsYkHTxaujvjl5S25+RtwGGxLdig==}
 
   '@cosmjs/stargate@0.37.0':
     resolution: {integrity: sha512-accDRW9QvMbWf6zrg/YHR/E8UCDr1q2gu8zUI7Hdn8KjhO4yO/+Ry119Lqr8FRNxCJ4DvLe8yhYDLk5FFKuQCQ==}
 
+  '@cosmjs/stargate@0.38.0':
+    resolution: {integrity: sha512-NHA0IVOVM4Gb+yaLh2OeGmXVKQpwlkLWtSXwS5TlZWQlmXrUyko5rW91lpQq8tJ6g0SWqV7ojLKLQW9ZPqmw5w==}
+
   '@cosmjs/stream@0.37.0':
     resolution: {integrity: sha512-xMfNL6GNCe08erwEJ6W7Oj34VqdCmCTyB/d68DIjgcXczOxndNHsldKyZLcLQse7jbwtDegYY68hW1OqikwWwg==}
 
+  '@cosmjs/stream@0.38.0':
+    resolution: {integrity: sha512-Y6ty8D5253xQ5xM+bV+3YoTiW5vT3OHmoKUe7hx72WoNGGU9CECZHW1J460TmWJjwzjxyrGIMMbRWI43DgdDdQ==}
+
   '@cosmjs/tendermint-rpc@0.37.0':
     resolution: {integrity: sha512-TTLJwiA9FLLrQ7OIJxo2vt+HoTW54IUaBx7tptOvwCilYFQDNWYQaC22ACLF9sOPx3PtDqDpDDqDHfRbODD1sw==}
+
+  '@cosmjs/tendermint-rpc@0.38.0':
+    resolution: {integrity: sha512-9AYGp8W+ZKmLMkG6aK2r6ahUa4XHCzGcE8N8lfeM2OSq0o6zLA3Q0PICOkHywtCY52S8U+f0JyqeAbrPME9OIg==}
 
   '@cosmjs/utils@0.31.3':
     resolution: {integrity: sha512-VBhAgzrrYdIe0O5IbKRqwszbQa7ZyQLx9nEQuHQ3HUplQW7P44COG/ye2n6AzCudtqxmwdX7nyX8ta1J07GoqA==}
 
   '@cosmjs/utils@0.37.0':
     resolution: {integrity: sha512-j46yZg+cLBpANGc5sCxtQHJgPGBt5zSKlU+KX9FlDS6JU6q2vZYCpKgucFFpjekEiMagU1eu8cDSCRjTthEM6w==}
+
+  '@cosmjs/utils@0.38.0':
+    resolution: {integrity: sha512-PKsuXE84fPagzqdSDCXsHvckv0hV6JAjGZeQBCk0HEpkS6Nw8KlrHh4gJB/hGDFgl1/BF94AV5sALeAxWTprGA==}
 
   '@cosmsnap/snapper@0.2.7':
     resolution: {integrity: sha512-APdNxu6b761pNL9LTk4uxQr+cE88TdW6abtkVKxOgJcOtRsheI5mj7d5/hcIsm1dSiHv6WXefYdcTG9sOU/K9A==}
@@ -5961,6 +6015,10 @@ packages:
   cosmjs-types@0.10.1:
     resolution: {integrity: sha512-CENXb4O5GN+VyB68HYXFT2SOhv126Z59631rZC56m8uMWa6/cSlFeai8BwZGT1NMepw0Ecf+U8XSOnBzZUWh9Q==}
 
+  cosmjs-types@0.11.0:
+    resolution: {integrity: sha512-kDSkgHpRTrg1413jCNehT3P21+EBxZWFMBr9JEzVfmPiNdtuwAoLAkCYo7c7i/pTakAwyHsXbxOg8kkD+AN33w==}
+    engines: {node: '>=20.19'}
+
   cosmjs-types@0.8.0:
     resolution: {integrity: sha512-Q2Mj95Fl0PYMWEhA2LuGEIhipF7mQwd9gTQ85DdP9jjjopeoGaDxvmPa5nakNzsq7FnO1DMTatXTAx6bxMH7Lg==}
 
@@ -9051,6 +9109,9 @@ packages:
     resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
     engines: {node: '>= 14.18.0'}
 
+  readonly-date-esm@2.0.0:
+    resolution: {integrity: sha512-adlyzz144ofU22kjnnRIN0HPPqIbc5IZvMmMuVtEgMY4mKgNyKqOVb4Fa2GUzE2By4TEPOYoGqDoKRyqmeEuPQ==}
+
   readonly-date@1.0.0:
     resolution: {integrity: sha512-tMKIV7hlk0h4mO3JTmmVuIlJVXjKk3Sep9Bf5OH0O+758ruuVkUy2J9SttDLm91IEX/WHlXPSpxMGjPj4beMIQ==}
 
@@ -11147,7 +11208,7 @@ snapshots:
 
   '@bitcoinerlab/secp256k1@1.2.0':
     dependencies:
-      '@noble/curves': 1.8.0
+      '@noble/curves': 1.9.7
 
   '@bitget-wallet/web3-sdk@0.0.8(bufferutil@4.1.0)(encoding@0.1.13)(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
@@ -11264,14 +11325,14 @@ snapshots:
 
   '@coinbase/wallet-sdk@4.3.0':
     dependencies:
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       clsx: 1.2.1
       eventemitter3: 5.0.1
       preact: 10.28.0
 
   '@coinbase/wallet-sdk@4.3.2':
     dependencies:
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       clsx: 1.2.1
       eventemitter3: 5.0.1
       preact: 10.28.0
@@ -11301,7 +11362,7 @@ snapshots:
   '@coral-xyz/anchor@0.29.0(bufferutil@4.1.0)(encoding@0.1.13)(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
       '@coral-xyz/borsh': 0.29.0(@solana/web3.js@1.98.4(bufferutil@4.1.0)(encoding@0.1.13)(typescript@5.8.3)(utf-8-validate@5.0.10))
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@solana/web3.js': 1.98.4(bufferutil@4.1.0)(encoding@0.1.13)(typescript@5.8.3)(utf-8-validate@5.0.10)
       bn.js: 5.2.2
       bs58: 4.0.1
@@ -11340,6 +11401,13 @@ snapshots:
       '@cosmjs/math': 0.37.0
       '@cosmjs/utils': 0.37.0
 
+  '@cosmjs/amino@0.38.0':
+    dependencies:
+      '@cosmjs/crypto': 0.38.0
+      '@cosmjs/encoding': 0.38.0
+      '@cosmjs/math': 0.38.0
+      '@cosmjs/utils': 0.38.0
+
   '@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)':
     dependencies:
       '@cosmjs/amino': 0.37.0
@@ -11360,7 +11428,7 @@ snapshots:
       '@cosmjs/encoding': 0.31.3
       '@cosmjs/math': 0.31.3
       '@cosmjs/utils': 0.31.3
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       bn.js: 5.2.2
       elliptic: 6.6.1
       libsodium-wrappers-sumo: 0.7.15
@@ -11370,6 +11438,17 @@ snapshots:
       '@cosmjs/encoding': 0.37.0
       '@cosmjs/math': 0.37.0
       '@cosmjs/utils': 0.37.0
+      '@noble/ciphers': 1.3.0
+      '@noble/curves': 1.9.7
+      '@noble/hashes': 1.8.0
+      '@scure/bip39': 1.6.0
+      hash-wasm: 4.12.0
+
+  '@cosmjs/crypto@0.38.0':
+    dependencies:
+      '@cosmjs/encoding': 0.38.0
+      '@cosmjs/math': 0.38.0
+      '@cosmjs/utils': 0.38.0
       '@noble/ciphers': 1.3.0
       '@noble/curves': 1.9.7
       '@noble/hashes': 1.8.0
@@ -11394,9 +11473,20 @@ snapshots:
       base64-js: 1.5.1
       readonly-date: 1.0.0
 
+  '@cosmjs/encoding@0.38.0':
+    dependencies:
+      '@scure/base': 2.0.0
+      base64-js: 1.5.1
+      readonly-date-esm: 2.0.0
+
   '@cosmjs/json-rpc@0.37.0':
     dependencies:
       '@cosmjs/stream': 0.37.0
+      xstream: 11.14.0
+
+  '@cosmjs/json-rpc@0.38.0':
+    dependencies:
+      '@cosmjs/stream': 0.38.0
       xstream: 11.14.0
 
   '@cosmjs/math@0.31.3':
@@ -11404,6 +11494,8 @@ snapshots:
       bn.js: 5.2.2
 
   '@cosmjs/math@0.37.0': {}
+
+  '@cosmjs/math@0.38.0': {}
 
   '@cosmjs/proto-signing@0.31.3':
     dependencies:
@@ -11424,9 +11516,28 @@ snapshots:
       '@cosmjs/utils': 0.37.0
       cosmjs-types: 0.10.1
 
+  '@cosmjs/proto-signing@0.38.0':
+    dependencies:
+      '@cosmjs/amino': 0.38.0
+      '@cosmjs/crypto': 0.38.0
+      '@cosmjs/encoding': 0.38.0
+      '@cosmjs/math': 0.38.0
+      '@cosmjs/utils': 0.38.0
+      cosmjs-types: 0.11.0
+
   '@cosmjs/socket@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)':
     dependencies:
       '@cosmjs/stream': 0.37.0
+      isomorphic-ws: 4.0.1(ws@7.5.10(bufferutil@4.1.0)(utf-8-validate@5.0.10))
+      ws: 7.5.10(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      xstream: 11.14.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
+  '@cosmjs/socket@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)':
+    dependencies:
+      '@cosmjs/stream': 0.38.0
       isomorphic-ws: 4.0.1(ws@7.5.10(bufferutil@4.1.0)(utf-8-validate@5.0.10))
       ws: 7.5.10(bufferutil@4.1.0)(utf-8-validate@5.0.10)
       xstream: 11.14.0
@@ -11448,7 +11559,25 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
+  '@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)':
+    dependencies:
+      '@cosmjs/amino': 0.38.0
+      '@cosmjs/encoding': 0.38.0
+      '@cosmjs/math': 0.38.0
+      '@cosmjs/proto-signing': 0.38.0
+      '@cosmjs/stream': 0.38.0
+      '@cosmjs/tendermint-rpc': 0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      '@cosmjs/utils': 0.38.0
+      cosmjs-types: 0.11.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
   '@cosmjs/stream@0.37.0':
+    dependencies:
+      xstream: 11.14.0
+
+  '@cosmjs/stream@0.38.0':
     dependencies:
       xstream: 11.14.0
 
@@ -11467,9 +11596,26 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
+  '@cosmjs/tendermint-rpc@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)':
+    dependencies:
+      '@cosmjs/crypto': 0.38.0
+      '@cosmjs/encoding': 0.38.0
+      '@cosmjs/json-rpc': 0.38.0
+      '@cosmjs/math': 0.38.0
+      '@cosmjs/socket': 0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      '@cosmjs/stream': 0.38.0
+      '@cosmjs/utils': 0.38.0
+      readonly-date-esm: 2.0.0
+      xstream: 11.14.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+
   '@cosmjs/utils@0.31.3': {}
 
   '@cosmjs/utils@0.37.0': {}
+
+  '@cosmjs/utils@0.38.0': {}
 
   '@cosmsnap/snapper@0.2.7(encoding@0.1.13)':
     dependencies:
@@ -11488,10 +11634,10 @@ snapshots:
       enabled: 2.0.0
       kuler: 2.0.0
 
-  '@dao-dao/cosmiframe@1.0.0(@cosmjs/amino@0.31.3)(@cosmjs/proto-signing@0.37.0)':
+  '@dao-dao/cosmiframe@1.0.0(@cosmjs/amino@0.38.0)(@cosmjs/proto-signing@0.38.0)':
     dependencies:
-      '@cosmjs/amino': 0.31.3
-      '@cosmjs/proto-signing': 0.37.0
+      '@cosmjs/amino': 0.38.0
+      '@cosmjs/proto-signing': 0.38.0
       uuid: 9.0.1
 
   '@date-fns/utc@1.2.0': {}
@@ -12168,7 +12314,7 @@ snapshots:
       '@cosmjs/encoding': 0.32.4
       '@ethereumjs/util': 9.1.0
       '@getpara/user-management-client': 2.0.0-alpha.72
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       base64url: 3.0.1
       libphonenumber-js: 1.12.33
       node-forge: 1.3.3
@@ -12190,23 +12336,23 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@getpara/cosmjs-v0-integration@2.0.0-alpha.72(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))':
+  '@getpara/cosmjs-v0-integration@2.0.0-alpha.72(@cosmjs/amino@0.38.0)(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))':
     dependencies:
-      '@cosmjs/amino': 0.31.3
-      '@cosmjs/encoding': 0.37.0
-      '@cosmjs/proto-signing': 0.37.0
-      '@cosmjs/stargate': 0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      '@cosmjs/amino': 0.38.0
+      '@cosmjs/encoding': 0.38.0
+      '@cosmjs/proto-signing': 0.38.0
+      '@cosmjs/stargate': 0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
       '@getpara/core-sdk': 2.0.0-alpha.72
     transitivePeerDependencies:
       - debug
 
-  ? '@getpara/cosmos-wallet-connectors@2.0.0-alpha.72(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/tendermint-rpc@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@keplr-wallet/types@0.12.306)(@types/react@18.3.27)(cosmjs-types@0.10.1)(fp-ts@2.1.1)(graz@0.4.2(@cosmjs/amino@0.31.3)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76))(immer@10.2.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)'
+  ? '@getpara/cosmos-wallet-connectors@2.0.0-alpha.72(@cosmjs/amino@0.38.0)(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/tendermint-rpc@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@keplr-wallet/types@0.12.306)(@types/react@18.3.27)(cosmjs-types@0.11.0)(fp-ts@2.1.1)(graz@0.4.2(@cosmjs/amino@0.38.0)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76))(immer@10.2.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)'
   : dependencies:
-      '@getpara/graz-connector': 2.0.0-alpha.72(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/tendermint-rpc@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@keplr-wallet/types@0.12.306)(cosmjs-types@0.10.1)(graz@0.4.2(@cosmjs/amino@0.31.3)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76))
+      '@getpara/graz-connector': 2.0.0-alpha.72(@cosmjs/amino@0.38.0)(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/tendermint-rpc@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@keplr-wallet/types@0.12.306)(cosmjs-types@0.11.0)(graz@0.4.2(@cosmjs/amino@0.38.0)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76))
       '@getpara/react-common': 2.0.0-alpha.72(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@getpara/web-sdk': 2.0.0-alpha.72
-      '@leapwallet/cosmos-social-login-capsule-provider': 0.0.41(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(fp-ts@2.1.1)
-      graz: 0.4.2(@cosmjs/amino@0.31.3)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76)
+      '@leapwallet/cosmos-social-login-capsule-provider': 0.0.41(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(fp-ts@2.1.1)
+      graz: 0.4.2(@cosmjs/amino@0.38.0)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       zustand: 4.5.7(@types/react@18.3.27)(immer@10.2.0)(react@18.3.1)
@@ -12275,18 +12421,18 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@getpara/graz-connector@2.0.0-alpha.72(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/tendermint-rpc@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@keplr-wallet/types@0.12.306)(cosmjs-types@0.10.1)(graz@0.4.2(@cosmjs/amino@0.31.3)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76))':
+  '@getpara/graz-connector@2.0.0-alpha.72(@cosmjs/amino@0.38.0)(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/tendermint-rpc@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@keplr-wallet/types@0.12.306)(cosmjs-types@0.11.0)(graz@0.4.2(@cosmjs/amino@0.38.0)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76))':
     dependencies:
-      '@cosmjs/amino': 0.31.3
-      '@cosmjs/encoding': 0.37.0
-      '@cosmjs/proto-signing': 0.37.0
-      '@cosmjs/stargate': 0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
-      '@cosmjs/tendermint-rpc': 0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
-      '@getpara/cosmjs-v0-integration': 2.0.0-alpha.72(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))
+      '@cosmjs/amino': 0.38.0
+      '@cosmjs/encoding': 0.38.0
+      '@cosmjs/proto-signing': 0.38.0
+      '@cosmjs/stargate': 0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      '@cosmjs/tendermint-rpc': 0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      '@getpara/cosmjs-v0-integration': 2.0.0-alpha.72(@cosmjs/amino@0.38.0)(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))
       '@getpara/web-sdk': 2.0.0-alpha.72
       '@keplr-wallet/types': 0.12.306
-      cosmjs-types: 0.10.1
-      graz: 0.4.2(@cosmjs/amino@0.31.3)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76)
+      cosmjs-types: 0.11.0
+      graz: 0.4.2(@cosmjs/amino@0.38.0)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76)
     transitivePeerDependencies:
       - '@farcaster/miniapp-sdk'
       - debug
@@ -12331,10 +12477,10 @@ snapshots:
       - debug
       - immer
 
-  '@getpara/react-sdk@2.0.0-alpha.72(d2d83aaad1b0ada06e8a51b5ab7efd1d)':
+  '@getpara/react-sdk@2.0.0-alpha.72(a74466c9d68196bc844f0697ac9b1163)':
     dependencies:
-      '@getpara/cosmjs-v0-integration': 2.0.0-alpha.72(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))
-      '@getpara/cosmos-wallet-connectors': 2.0.0-alpha.72(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/tendermint-rpc@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@keplr-wallet/types@0.12.306)(@types/react@18.3.27)(cosmjs-types@0.10.1)(fp-ts@2.1.1)(graz@0.4.2(@cosmjs/amino@0.31.3)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76))(immer@10.2.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@getpara/cosmjs-v0-integration': 2.0.0-alpha.72(@cosmjs/amino@0.38.0)(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))
+      '@getpara/cosmos-wallet-connectors': 2.0.0-alpha.72(@cosmjs/amino@0.38.0)(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/tendermint-rpc@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@keplr-wallet/types@0.12.306)(@types/react@18.3.27)(cosmjs-types@0.11.0)(fp-ts@2.1.1)(graz@0.4.2(@cosmjs/amino@0.38.0)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76))(immer@10.2.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@getpara/evm-wallet-connectors': 2.0.0-alpha.72(f0606c1a5876baa25a35a21edba1dd18)
       '@getpara/react-sdk-lite': 2.0.0-alpha.72(@emotion/is-prop-valid@1.2.2)(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(immer@10.2.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@getpara/solana-signers-v2-integration': 2.0.0-alpha.72(@solana/addresses@3.0.3(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3))(@solana/keys@3.0.3(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3))(@solana/rpc-api@3.0.3(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3))(@solana/rpc-spec@3.0.3(typescript@5.8.3))(@solana/signers@3.0.3(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3))(@solana/transactions@3.0.3(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3))
@@ -12582,8 +12728,8 @@ snapshots:
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.12.0)
       '@iota/bcs': 1.4.0
-      '@noble/curves': 1.8.0
-      '@noble/hashes': 1.7.1
+      '@noble/curves': 1.9.7
+      '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
       '@suchipi/femver': 1.0.0
@@ -12749,8 +12895,8 @@ snapshots:
 
   '@keplr-wallet/crypto@0.12.156':
     dependencies:
-      '@noble/curves': 1.8.0
-      '@noble/hashes': 1.7.1
+      '@noble/curves': 1.9.7
+      '@noble/hashes': 1.8.0
       bip32: 2.0.6
       bip39: 3.1.0
       bs58check: 2.1.2
@@ -12840,7 +12986,7 @@ snapshots:
     dependencies:
       '@layerzerolabs/lz-foundation': 2.3.30-oft-rc.0(bufferutil@4.1.0)(encoding@0.1.13)(got@12.1.0)(typescript@5.8.3)(utf-8-validate@5.0.10)
       '@noble/ed25519': 1.7.5
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@noble/secp256k1': 1.7.2
       tiny-invariant: 1.3.3
     transitivePeerDependencies:
@@ -12856,7 +13002,7 @@ snapshots:
     dependencies:
       '@ethersproject/bytes': 5.8.0
       '@layerzerolabs/lz-core': 2.3.45-oft-rc.0(bufferutil@4.1.0)(encoding@0.1.13)(got@12.1.0)(typescript@5.8.3)(utf-8-validate@5.0.10)
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@noble/secp256k1': 1.7.2
       '@solana/web3.js': 1.98.4(bufferutil@4.1.0)(encoding@0.1.13)(typescript@5.8.3)(utf-8-validate@5.0.10)
       bip39: 3.1.0
@@ -12879,7 +13025,7 @@ snapshots:
       '@metaplex-foundation/umi-program-repository': 0.9.2(@metaplex-foundation/umi@0.9.2)
       '@metaplex-foundation/umi-rpc-web3js': 0.9.2(@metaplex-foundation/umi@0.9.2)(@solana/web3.js@1.95.8(bufferutil@4.1.0)(encoding@0.1.13)(utf-8-validate@5.0.10))
       '@metaplex-foundation/umi-transaction-factory-web3js': 0.9.2(@metaplex-foundation/umi@0.9.2)(@solana/web3.js@1.95.8(bufferutil@4.1.0)(encoding@0.1.13)(utf-8-validate@5.0.10))
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@noble/secp256k1': 1.7.2
       '@solana/web3.js': 1.95.8(bufferutil@4.1.0)(encoding@0.1.13)(utf-8-validate@5.0.10)
       bip39: 3.1.0
@@ -12908,7 +13054,7 @@ snapshots:
       '@layerzerolabs/lz-definitions': 2.3.45-oft-rc.0
       '@layerzerolabs/lz-utilities': 2.3.45-oft-rc.0(bufferutil@4.1.0)(encoding@0.1.13)(got@12.1.0)(typescript@5.8.3)(utf-8-validate@5.0.10)
       '@noble/ed25519': 1.7.5
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@noble/secp256k1': 1.7.2
     transitivePeerDependencies:
       - bufferutil
@@ -12922,7 +13068,7 @@ snapshots:
       '@layerzerolabs/lz-definitions': 3.0.151
       '@layerzerolabs/lz-utilities': 3.0.151(bufferutil@4.1.0)(encoding@0.1.13)(got@12.1.0)(typescript@5.8.3)(utf-8-validate@5.0.10)
       '@noble/ed25519': 1.7.5
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@noble/secp256k1': 1.7.2
       '@scure/base': 1.2.6
       bech32: 2.0.0
@@ -13027,7 +13173,7 @@ snapshots:
       '@ethersproject/bytes': 5.8.0
       '@ethersproject/providers': 5.8.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
       '@layerzerolabs/lz-definitions': 2.3.45-oft-rc.0
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@noble/secp256k1': 1.7.2
       '@solana/web3.js': 1.98.4(bufferutil@4.1.0)(encoding@0.1.13)(typescript@5.8.3)(utf-8-validate@5.0.10)
       aptos: 1.22.1(got@12.1.0)
@@ -13143,11 +13289,11 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@leapwallet/cosmos-social-login-capsule-provider@0.0.41(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(fp-ts@2.1.1)':
+  '@leapwallet/cosmos-social-login-capsule-provider@0.0.41(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(fp-ts@2.1.1)':
     dependencies:
       '@cosmjs/amino': 0.31.3
       '@leapwallet/cosmos-social-login-core': 0.0.1
-      '@usecapsule/cosmjs-v0-integration': 1.24.1(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)
+      '@usecapsule/cosmjs-v0-integration': 1.24.1(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)
       '@usecapsule/web-sdk': 1.23.0(fp-ts@2.1.1)
       long: 5.2.3
     transitivePeerDependencies:
@@ -13363,7 +13509,7 @@ snapshots:
     dependencies:
       '@ethereumjs/tx': 4.2.0
       '@metamask/superstruct': 3.2.1
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
       '@types/debug': 4.1.12
       '@types/lodash': 4.17.21
@@ -13398,7 +13544,7 @@ snapshots:
     dependencies:
       '@ethereumjs/tx': 4.2.0
       '@metamask/superstruct': 3.2.1
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
       '@types/debug': 4.1.12
       debug: 4.4.3
@@ -13412,7 +13558,7 @@ snapshots:
     dependencies:
       '@ethereumjs/tx': 4.2.0
       '@metamask/superstruct': 3.2.1
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
       '@types/debug': 4.1.12
       debug: 4.4.3
@@ -13513,14 +13659,14 @@ snapshots:
     dependencies:
       '@metaplex-foundation/umi': 0.9.2
       '@metaplex-foundation/umi-web3js-adapters': 0.9.2(@metaplex-foundation/umi@0.9.2)(@solana/web3.js@1.95.8(bufferutil@4.1.0)(encoding@0.1.13)(utf-8-validate@5.0.10))
-      '@noble/curves': 1.8.0
+      '@noble/curves': 1.9.7
       '@solana/web3.js': 1.95.8(bufferutil@4.1.0)(encoding@0.1.13)(utf-8-validate@5.0.10)
 
   '@metaplex-foundation/umi-eddsa-web3js@0.9.2(@metaplex-foundation/umi@0.9.2)(@solana/web3.js@1.98.4(bufferutil@4.1.0)(encoding@0.1.13)(typescript@5.8.3)(utf-8-validate@5.0.10))':
     dependencies:
       '@metaplex-foundation/umi': 0.9.2
       '@metaplex-foundation/umi-web3js-adapters': 0.9.2(@metaplex-foundation/umi@0.9.2)(@solana/web3.js@1.98.4(bufferutil@4.1.0)(encoding@0.1.13)(typescript@5.8.3)(utf-8-validate@5.0.10))
-      '@noble/curves': 1.8.0
+      '@noble/curves': 1.9.7
       '@solana/web3.js': 1.98.4(bufferutil@4.1.0)(encoding@0.1.13)(typescript@5.8.3)(utf-8-validate@5.0.10)
 
   '@metaplex-foundation/umi-http-fetch@0.9.2(@metaplex-foundation/umi@0.9.2)(encoding@0.1.13)':
@@ -16022,7 +16168,7 @@ snapshots:
   '@scure/bip32@1.3.2':
     dependencies:
       '@noble/curves': 1.2.0
-      '@noble/hashes': 1.3.2
+      '@noble/hashes': 1.3.3
       '@scure/base': 1.1.9
 
   '@scure/bip32@1.4.0':
@@ -16039,7 +16185,7 @@ snapshots:
 
   '@scure/bip32@1.7.0':
     dependencies:
-      '@noble/curves': 1.9.1
+      '@noble/curves': 1.9.7
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
 
@@ -16050,7 +16196,7 @@ snapshots:
 
   '@scure/bip39@1.2.1':
     dependencies:
-      '@noble/hashes': 1.3.2
+      '@noble/hashes': 1.3.3
       '@scure/base': 1.1.9
 
   '@scure/bip39@1.3.0':
@@ -17645,8 +17791,8 @@ snapshots:
   '@solana/web3.js@1.95.8(bufferutil@4.1.0)(encoding@0.1.13)(utf-8-validate@5.0.10)':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@noble/curves': 1.8.0
-      '@noble/hashes': 1.7.1
+      '@noble/curves': 1.9.7
+      '@noble/hashes': 1.8.0
       '@solana/buffer-layout': 4.0.1
       agentkeepalive: 4.6.0
       bigint-buffer: 1.1.5
@@ -17667,8 +17813,8 @@ snapshots:
   '@solana/web3.js@1.98.4(bufferutil@4.1.0)(encoding@0.1.13)(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
       '@babel/runtime': 7.28.4
-      '@noble/curves': 1.8.0
-      '@noble/hashes': 1.7.1
+      '@noble/curves': 1.9.7
+      '@noble/hashes': 1.8.0
       '@solana/buffer-layout': 4.0.1
       '@solana/codecs-numbers': 2.3.0(typescript@5.8.3)
       agentkeepalive: 4.6.0
@@ -18012,7 +18158,7 @@ snapshots:
       '@ethereumjs/tx': 10.1.0
       '@fivebinaries/coin-selection': 3.0.0
       '@mobily/ts-belt': 3.13.1
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@scure/bip39': 1.6.0
       '@solana-program/compute-budget': 0.8.0(@solana/kit@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3)(ws@8.18.3(bufferutil@4.1.0)(utf-8-validate@5.0.10)))
       '@solana-program/system': 0.7.0(@solana/kit@2.3.0(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.8.3)(ws@8.18.3(bufferutil@4.1.0)(utf-8-validate@5.0.10)))
@@ -18499,7 +18645,7 @@ snapshots:
     dependencies:
       '@celo/utils': 6.0.1
       '@cosmjs/encoding': 0.32.4
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@usecapsule/user-management-client': 1.21.1
       base64url: 3.0.1
       buffer: 6.0.3
@@ -18509,11 +18655,11 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@usecapsule/cosmjs-v0-integration@1.24.1(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)':
+  '@usecapsule/cosmjs-v0-integration@1.24.1(@cosmjs/amino@0.31.3)(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)':
     dependencies:
       '@cosmjs/amino': 0.31.3
-      '@cosmjs/encoding': 0.37.0
-      '@cosmjs/proto-signing': 0.37.0
+      '@cosmjs/encoding': 0.38.0
+      '@cosmjs/proto-signing': 0.38.0
       '@usecapsule/core-sdk': 1.24.1
     transitivePeerDependencies:
       - debug
@@ -20514,7 +20660,7 @@ snapshots:
 
   '@xrplf/isomorphic@1.0.1(bufferutil@4.1.0)(utf-8-validate@5.0.10)':
     dependencies:
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       eventemitter3: 5.0.1
       ws: 8.18.3(bufferutil@4.1.0)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
@@ -20938,7 +21084,7 @@ snapshots:
 
   bip32@5.0.0(typescript@5.8.3):
     dependencies:
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
       uint8array-tools: 0.0.8
       valibot: 0.37.0(typescript@5.8.3)
@@ -20948,7 +21094,7 @@ snapshots:
 
   bip39@3.1.0:
     dependencies:
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
 
   bip66@2.0.0: {}
 
@@ -21097,7 +21243,7 @@ snapshots:
 
   bs58check@4.0.0:
     dependencies:
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
       bs58: 6.0.0
 
   bser@2.1.1:
@@ -21398,6 +21544,8 @@ snapshots:
       vary: 1.1.2
 
   cosmjs-types@0.10.1: {}
+
+  cosmjs-types@0.11.0: {}
 
   cosmjs-types@0.8.0:
     dependencies:
@@ -22306,7 +22454,7 @@ snapshots:
 
   ethereum-bloom-filters@1.2.0:
     dependencies:
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.8.0
 
   ethereum-cryptography@0.1.3:
     dependencies:
@@ -22879,15 +23027,15 @@ snapshots:
 
   graphql@16.12.0: {}
 
-  graz@0.4.2(@cosmjs/amino@0.31.3)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.37.0)(@cosmjs/proto-signing@0.37.0)(@cosmjs/stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76):
+  graz@0.4.2(@cosmjs/amino@0.38.0)(@cosmjs/cosmwasm-stargate@0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@cosmjs/encoding@0.38.0)(@cosmjs/proto-signing@0.38.0)(@cosmjs/stargate@0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(@react-native-async-storage/async-storage@1.24.0(react-native@0.83.1(@babel/core@7.28.5)(@types/react@18.3.27)(bufferutil@4.1.0)(react@18.3.1)(utf-8-validate@5.0.10)))(@tanstack/react-query@5.90.12(react@18.3.1))(@types/react@18.3.27)(bufferutil@4.1.0)(encoding@0.1.13)(immer@10.2.0)(react@18.3.1)(typescript@5.8.3)(use-sync-external-store@1.4.0(react@18.3.1))(utf-8-validate@5.0.10)(zod@3.25.76):
     dependencies:
-      '@cosmjs/amino': 0.31.3
+      '@cosmjs/amino': 0.38.0
       '@cosmjs/cosmwasm-stargate': 0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
-      '@cosmjs/encoding': 0.37.0
-      '@cosmjs/proto-signing': 0.37.0
-      '@cosmjs/stargate': 0.37.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
+      '@cosmjs/encoding': 0.38.0
+      '@cosmjs/proto-signing': 0.38.0
+      '@cosmjs/stargate': 0.38.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
       '@cosmsnap/snapper': 0.2.7(encoding@0.1.13)
-      '@dao-dao/cosmiframe': 1.0.0(@cosmjs/amino@0.31.3)(@cosmjs/proto-signing@0.37.0)
+      '@dao-dao/cosmiframe': 1.0.0(@cosmjs/amino@0.38.0)(@cosmjs/proto-signing@0.38.0)
       '@initia/initia-registry-types': 0.0.20
       '@keplr-wallet/cosmos': 0.12.156
       '@keplr-wallet/types': 0.12.156
@@ -24375,10 +24523,10 @@ snapshots:
   ox@0.6.7(typescript@5.8.3)(zod@3.25.76):
     dependencies:
       '@adraffy/ens-normalize': 1.11.1
-      '@noble/curves': 1.8.1
-      '@noble/hashes': 1.7.1
+      '@noble/curves': 1.9.7
+      '@noble/hashes': 1.8.0
       '@scure/bip32': 1.6.2
-      '@scure/bip39': 1.5.4
+      '@scure/bip39': 1.6.0
       abitype: 1.0.8(typescript@5.8.3)(zod@3.25.76)
       eventemitter3: 5.0.1
     optionalDependencies:
@@ -24389,8 +24537,8 @@ snapshots:
   ox@0.6.9(typescript@5.8.3)(zod@3.25.76):
     dependencies:
       '@adraffy/ens-normalize': 1.11.1
-      '@noble/curves': 1.8.0
-      '@noble/hashes': 1.7.1
+      '@noble/curves': 1.9.7
+      '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
       abitype: 1.2.3(typescript@5.8.3)(zod@3.25.76)
@@ -24404,7 +24552,7 @@ snapshots:
     dependencies:
       '@adraffy/ens-normalize': 1.11.1
       '@noble/ciphers': 1.3.0
-      '@noble/curves': 1.9.2
+      '@noble/curves': 1.9.7
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
@@ -25182,6 +25330,8 @@ snapshots:
 
   readdirp@4.1.2: {}
 
+  readonly-date-esm@2.0.0: {}
+
   readonly-date@1.0.0: {}
 
   real-require@0.1.0: {}
@@ -25312,7 +25462,7 @@ snapshots:
 
   ripple-keypairs@2.0.0(bufferutil@4.1.0)(utf-8-validate@5.0.10):
     dependencies:
-      '@noble/curves': 1.8.0
+      '@noble/curves': 1.9.7
       '@xrplf/isomorphic': 1.0.1(bufferutil@4.1.0)(utf-8-validate@5.0.10)
       ripple-address-codec: 5.0.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
