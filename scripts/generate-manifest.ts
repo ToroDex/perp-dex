@@ -80,12 +80,19 @@ function loadConfig(): Config {
 
   try {
     const configText = readFileSync(configPath, "utf-8");
-    const jsonText = configText
-      .replace(/window\.__RUNTIME_CONFIG__\s*=\s*/, "")
-      .replace(/;$/, "")
-      .trim();
 
-    const config = JSON.parse(jsonText) as Config;
+    // Extract config values directly with regex (more robust than JSON parsing)
+    const extractValue = (key: string): string | undefined => {
+      const match = configText.match(new RegExp(`${key}:\\s*["']([^"']*)["']`));
+      return match?.[1];
+    };
+
+    const config: Config = {
+      VITE_APP_NAME: extractValue('VITE_APP_NAME'),
+      VITE_APP_DESCRIPTION: extractValue('VITE_APP_DESCRIPTION'),
+      VITE_BASE_URL: extractValue('VITE_BASE_URL'),
+    };
+
     console.log("✓ Loaded config from public/config.js");
     return config;
   } catch (error) {
